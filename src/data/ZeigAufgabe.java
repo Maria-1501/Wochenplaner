@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ZeigAufgabe {
 	
 	public static void zeigAufgabe () {
-		
+	
 		   try (BufferedReader br = new BufferedReader(new FileReader("aufgabe.csv"))) {
 			      String line;
 			      while ((line = br.readLine()) != null) {

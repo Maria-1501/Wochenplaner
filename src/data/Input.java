@@ -8,9 +8,10 @@ public class Input {
 
 	public static String inputText(String message) {
 		System.out.println(message);
-		String inputText = scan.next();
+		scan.nextLine();
+		String inputText = scan.nextLine();
+	
 
-//		scan.nextLine();
 		return inputText;
 
 	}

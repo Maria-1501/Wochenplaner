@@ -4,6 +4,8 @@ package data;
 
 import java.io.IOException;
 
+import dataHandling.CSVdataManager;
+
 
 public class Main {
 
@@ -12,9 +14,14 @@ public class Main {
 		System.out.println("Wenn weiter möchstest zum löschen drück 0");
 		InputAufgabe.inputAufgabe();
 
-		ZeigAufgabe zeigAufgabe = new ZeigAufgabe();
-        ZeigAufgabe.zeigAufgabe();
-        
+//		ZeigAufgabe zeigAufgabe = new ZeigAufgabe();
+//        ZeigAufgabe.zeigAufgabe();
+//        
+	
+		
+		CSVdataManager csvdataManager = new CSVdataManager();
+//		csvdataManager.save(null);
+		csvdataManager.leseAlleAufgaben();
 		DeleteLine readLine = new DeleteLine();
 		int nummer = Input.inputInt("Udalite nomer zadaniy");
 		DeleteLine.deleteByNummer(nummer);
